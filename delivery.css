@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: Arial;
+  }
+  #map {
+    height: 80vh;
+    width: 100%;
+  }
+  .status-box {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  .vehicle {
+    width: 32px;
+    height: 32px;
+    background: url('vehicle-icon.png') no-repeat center center;
+    background-size: contain;
+    animation: moveTruck 5s linear infinite;
+  }
+  
+  @keyframes moveTruck {
+    0% { transform: translateX(0px); }
+    100% { transform: translateX(100px); }
+  }
+  
